@@ -16,17 +16,11 @@ import android.widget.Scroller;
 import com.whu.bingo.bingoidea.utils.LogUtil;
 
 
-/**
- * Created by Mr_immortalZ on 2016/7/10.
- * email : mr_immortalz@qq.com
- * <p>
- * Editor: Ybao 2016/7/31
- * email : 392579823@qq.com
- */
 public class StereoView extends ViewGroup {
 
     //可对外进行设置的参数
     private int mStartScreen = 1;//开始时的item位置（1表示xml里面的第二张）
+    public static  int mCurStartScreen =1;
     private float resistance = 1.8f;//滑动阻力
     private Scroller mScroller;
     private float mAngle = 90;//两个item间的夹角
@@ -224,6 +218,7 @@ public class StereoView extends ViewGroup {
         delta = mHeight * mStartScreen - getScrollY();
         duration = (Math.abs(delta)) * 4;
         mScroller.startScroll(0, startY, 0, delta, duration);
+        mCurStartScreen = (mCurStartScreen + delta/mHeight)%3;
     }
 
     /**

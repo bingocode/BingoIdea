@@ -1,6 +1,7 @@
 package com.whu.bingo.bingoidea.view;
 
 import android.content.Context;
+import android.content.res.TypedArray;
 import android.graphics.Camera;
 import android.graphics.Canvas;
 import android.graphics.Matrix;
@@ -12,12 +13,15 @@ import android.view.ViewConfiguration;
 import android.view.ViewGroup;
 import android.view.animation.Interpolator;
 import android.widget.Scroller;
+
+import com.whu.bingo.bingoidea.R;
 import com.whu.bingo.bingoidea.utils.LogUtil;
 
 public class StereoView2 extends ViewGroup {
 
     //可对外进行设置的参数
     private int mStartScreen = 1;//开始时的item位置（1表示xml里面的第二张）
+    public static int curStartScreen = 1;//记录最初的位置（因为后面会移动
     private float resistance = 1.8f;//滑动阻力
     private Scroller mScroller;
     private float mAngle = 90;//两个item间的夹角
@@ -40,6 +44,7 @@ public class StereoView2 extends ViewGroup {
     private float mDownX, mDownY, mTempX;
     private boolean isSliding = false;
     private boolean isSliding2 = false; //判断是否是竖直方向的滑动
+    private Boolean isstartscene = false;
 
     private State mState = State.Normal;
 
@@ -54,6 +59,9 @@ public class StereoView2 extends ViewGroup {
     public StereoView2(Context context, AttributeSet attrs, int defStyleAttr) {
         super(context, attrs, defStyleAttr);
         this.mContext = context;
+        TypedArray a = context.obtainStyledAttributes(attrs, R.styleable.StereoView2);
+        isstartscene = a.getBoolean(R.styleable.StereoView2_isstarttheme,false);
+        a.recycle();
         init(mContext);
     }
 
@@ -160,11 +168,11 @@ public class StereoView2 extends ViewGroup {
                     isSliding = false;
                     mVelocityTracker.computeCurrentVelocity(1000);
                     float xVelocity = mVelocityTracker.getXVelocity();
-                    //滑动的速度大于规定的速度，或者向上滑动时，上一页页面展现出的高度超过1/2。则设定状态为State.ToPre
+                    //滑动的速度大于规定的速度，或者向右滑动时，右边页面展现出的宽度度超过1/2。则设定状态为State.ToPre
                     if (xVelocity > standerSpeed || ((getScrollX() + mWidth / 2) / mWidth < mStartScreen)) {
                         mState = State.ToPre;
                     } else if (xVelocity < -standerSpeed || ((getScrollX() + mWidth / 2) / mWidth > mStartScreen)) {
-                        //滑动的速度大于规定的速度，或者向下滑动时，下一页页面展现出的高度超过1/2。则设定状态为State.ToNext
+                        //滑动的速度大于规定的速度，或者向左滑动时，左边页面展现出的宽度超过1/2。则设定状态为State.ToNext
                         mState = State.ToNext;
                     } else {
                         mState = State.Normal;
@@ -235,12 +243,14 @@ public class StereoView2 extends ViewGroup {
         delta = mWidth * mStartScreen - getScrollX();
         duration = (Math.abs(delta)) * 4;
         mScroller.startScroll(startX,0 , delta, 0, duration);
+        if(isstartscene)
+        curStartScreen = (curStartScreen + delta/mWidth)%3;
     }
 
     /**
      * mState = State.ToPre 时进行的动作
      *
-     * @param xVelocity 竖直方向的速度
+     * @param xVelocity 水平方向的速度
      */
     private void toPreAction(float xVelocity) {
         int startX;
@@ -264,7 +274,7 @@ public class StereoView2 extends ViewGroup {
     /**
      * mState = State.ToNext 时进行的动作
      *
-     * @param xVelocity 竖直方向的速度
+     * @param xVelocity 水平方向的速度
      */
     private void toNextAction(float xVelocity) {
         int startX;

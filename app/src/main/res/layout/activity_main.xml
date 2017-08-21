@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/bg_blue_deep"
-    android:gravity="center"
+    android:gravity="center_horizontal"
     android:orientation="vertical"
     android:paddingBottom="@dimen/activity_vertical_margin"
     android:paddingLeft="@dimen/activity_horizontal_margin"
@@ -16,6 +16,7 @@
         android:layout_width="330dp"
         android:layout_height="250dp"
         android:id="@+id/stereoView"
+        android:layout_marginTop="50dp"
         >
 
         <com.whu.bingo.bingoidea.view.StereoView2
@@ -23,29 +24,110 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             >
-
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
             <ImageView
                 android:id="@+id/img00"
                 android:background="@drawable/p00"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:textColor="@color/font_white"
+                    android:textSize="@dimen/txt_size_large"
+                    android:text="@string/T00"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/t00"
+                    android:layout_marginRight="10dp"
+                    android:textColor="@color/font_white"
+                    android:textSize="@dimen/txt_size_medium"
+                    android:layout_gravity="bottom|right"/>
+            </FrameLayout>
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
             <ImageView
                 android:id="@+id/img01"
                 android:background="@drawable/p01"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:textColor="@color/font_white"
+                    android:textSize="@dimen/txt_size_large"
+                    android:text="@string/T01"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/t01"
+                    android:layout_marginRight="10dp"
+                    android:textColor="@color/font_white"
+                    android:textSize="@dimen/txt_size_medium"
+                    android:layout_gravity="bottom|right"/>
+            </FrameLayout>
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
             <ImageView
                 android:background="@drawable/p02"
                 android:layout_width="match_parent"
                 android:id="@+id/img02"
                 android:layout_height="match_parent"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:textColor="@color/font_white"
+                android:textSize="@dimen/txt_size_large"
+                android:text="@string/T02"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/t02"
+                android:layout_marginRight="10dp"
+                android:textColor="@color/font_white"
+                android:textSize="@dimen/txt_size_medium"
+                android:layout_gravity="bottom|right"/>
+            </FrameLayout>
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
             <ImageView
                 android:id="@+id/img03"
                 android:background="@drawable/p03"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"/>
-
-
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:textColor="@color/font_white"
+                    android:textSize="@dimen/txt_size_large"
+                    android:text="@string/T03"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/t03"
+                    android:layout_marginRight="10dp"
+                    android:textColor="@color/font_white"
+                    android:textSize="@dimen/txt_size_medium"
+                    android:layout_gravity="bottom|right"/>
+            </FrameLayout>
         </com.whu.bingo.bingoidea.view.StereoView2>
 
 
@@ -53,28 +135,122 @@
             android:id="@+id/stereoView22"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            app:isstarttheme = "true"
             >
-
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
             <ImageView
                 android:id="@+id/img10"
                 android:background="@drawable/p10"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:textColor="@color/font_white"
+                android:textSize="@dimen/txt_size_large"
+                android:text="@string/T10"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/t10"
+                android:layout_marginRight="10dp"
+                android:textColor="@color/font_white"
+                android:textSize="@dimen/txt_size_medium"
+                android:layout_gravity="bottom|right"/>
+            </FrameLayout>
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
             <ImageView
                 android:id="@+id/img11"
                 android:background="@drawable/p11"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/design_red_point"
+                    android:text="11"
+                    android:textSize="@dimen/txt_size_small"
+                    android:layout_margin="9dp"
+                    android:textColor="@color/font_white"
+                    android:layout_gravity="top|right"
+                    android:padding="10dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:textColor="@color/font_white"
+                android:textSize="@dimen/txt_size_large"
+                android:text="@string/T11"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/t11"
+                android:layout_marginRight="10dp"
+                android:textColor="@color/font_white"
+                android:textSize="@dimen/txt_size_medium"
+                android:layout_gravity="bottom|right"/>
+            </FrameLayout>
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
             <ImageView
                 android:id="@+id/img12"
                 android:background="@drawable/p12"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:textColor="@color/font_white"
+                    android:textSize="@dimen/txt_size_large"
+                    android:text="@string/T12"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/t12"
+                    android:layout_marginRight="10dp"
+                    android:textColor="@color/font_white"
+                    android:textSize="@dimen/txt_size_medium"
+                    android:layout_gravity="bottom|right"/>
+            </FrameLayout>
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
             <ImageView
                 android:id="@+id/img13"
                 android:background="@drawable/p13"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:textColor="@color/font_white"
+                    android:textSize="@dimen/txt_size_large"
+                    android:text="@string/T13"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/t13"
+                    android:layout_marginRight="10dp"
+                    android:textColor="@color/font_white"
+                    android:textSize="@dimen/txt_size_medium"
+                    android:layout_gravity="bottom|right"/>
+            </FrameLayout>
 
 
         </com.whu.bingo.bingoidea.view.StereoView2>
@@ -85,27 +261,111 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             >
-
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
             <ImageView
                 android:id="@+id/img20"
                 android:background="@drawable/p20"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:textColor="@color/font_white"
+                    android:textSize="@dimen/txt_size_large"
+                    android:text="@string/T20"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/t20"
+                    android:layout_marginRight="10dp"
+                    android:textColor="@color/font_white"
+                    android:textSize="@dimen/txt_size_medium"
+                    android:layout_gravity="bottom|right"/>
+            </FrameLayout>
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
             <ImageView
                 android:id="@+id/img21"
                 android:background="@drawable/p21"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:textColor="@color/font_white"
+                    android:textSize="@dimen/txt_size_large"
+                    android:text="@string/T21"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/t21"
+                    android:layout_marginRight="10dp"
+                    android:textColor="@color/font_white"
+                    android:textSize="@dimen/txt_size_medium"
+                    android:layout_gravity="bottom|right"/>
+            </FrameLayout>
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
             <ImageView
                 android:id="@+id/img22"
                 android:background="@drawable/p22"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:textColor="@color/font_white"
+                    android:textSize="@dimen/txt_size_large"
+                    android:text="@string/T22"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/t22"
+                    android:layout_marginRight="10dp"
+                    android:textColor="@color/font_white"
+                    android:textSize="@dimen/txt_size_medium"
+                    android:layout_gravity="bottom|right"/>
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
             <ImageView
                 android:id="@+id/img23"
                 android:background="@drawable/p23"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:textColor="@color/font_white"
+                    android:textSize="@dimen/txt_size_large"
+                    android:text="@string/T23"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/t23"
+                    android:layout_marginRight="10dp"
+                    android:textColor="@color/font_white"
+                    android:textSize="@dimen/txt_size_medium"
+                    android:layout_gravity="bottom|right"/>
+            </FrameLayout>
 
 
         </com.whu.bingo.bingoidea.view.StereoView2>
@@ -115,33 +375,130 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             >
-
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
             <ImageView
                 android:id="@+id/img30"
                 android:background="@drawable/p30"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:textColor="@color/font_white"
+                    android:textSize="@dimen/txt_size_large"
+                    android:text="@string/T30"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/t30"
+                    android:layout_marginRight="10dp"
+                    android:textColor="@color/font_white"
+                    android:textSize="@dimen/txt_size_medium"
+                    android:layout_gravity="bottom|right"/>
+            </FrameLayout>
+
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
             <ImageView
                 android:id="@+id/img31"
                 android:background="@drawable/p31"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:textColor="@color/font_white"
+                    android:textSize="@dimen/txt_size_large"
+                    android:text="@string/T31"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/t31"
+                    android:layout_marginRight="10dp"
+                    android:textColor="@color/font_white"
+                    android:textSize="@dimen/txt_size_medium"
+                    android:layout_gravity="bottom|right"/>
+            </FrameLayout>
+
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
             <ImageView
                 android:id="@+id/img32"
                 android:background="@drawable/p32"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:textColor="@color/font_white"
+                    android:textSize="@dimen/txt_size_large"
+                    android:text="@string/T32"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/t32"
+                    android:layout_marginRight="10dp"
+                    android:textColor="@color/font_white"
+                    android:textSize="@dimen/txt_size_medium"
+                    android:layout_gravity="bottom|right"/>
+            </FrameLayout>
+
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
             <ImageView
                 android:id="@+id/img33"
                 android:background="@drawable/p33"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"/>
-
-
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:textColor="@color/font_white"
+                    android:textSize="@dimen/txt_size_large"
+                    android:text="@string/T33"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/t33"
+                    android:layout_marginRight="10dp"
+                    android:textColor="@color/font_white"
+                    android:textSize="@dimen/txt_size_medium"
+                    android:layout_gravity="bottom|right"/>
+            </FrameLayout>
         </com.whu.bingo.bingoidea.view.StereoView2>
 
 
     </com.whu.bingo.bingoidea.view.StereoView>
+
+    <TextView
+        android:id="@+id/backorigion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/font_gray"
+        android:layout_marginTop="50dp"
+        android:textSize="@dimen/txt_size_large"
+        android:text="回到第一面"
+        />
 
 
 </LinearLayout>
