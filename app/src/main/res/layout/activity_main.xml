@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_blue_deep"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin">
+    <com.whu.bingo.bingoidea.view.StereoView
+        android:layout_width="330dp"
+        android:layout_height="250dp"
+        android:id="@+id/stereoView"
+        >
+
+        <com.whu.bingo.bingoidea.view.StereoView2
+            android:id="@+id/stereoView21"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+            <ImageView
+                android:id="@+id/img00"
+                android:background="@drawable/p00"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+            <ImageView
+                android:id="@+id/img01"
+                android:background="@drawable/p01"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+            <ImageView
+                android:background="@drawable/p02"
+                android:layout_width="match_parent"
+                android:id="@+id/img02"
+                android:layout_height="match_parent"/>
+            <ImageView
+                android:id="@+id/img03"
+                android:background="@drawable/p03"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+
+        </com.whu.bingo.bingoidea.view.StereoView2>
+
+
+        <com.whu.bingo.bingoidea.view.StereoView2
+            android:id="@+id/stereoView22"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+            <ImageView
+                android:id="@+id/img10"
+                android:background="@drawable/p10"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+            <ImageView
+                android:id="@+id/img11"
+                android:background="@drawable/p11"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+            <ImageView
+                android:id="@+id/img12"
+                android:background="@drawable/p12"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+            <ImageView
+                android:id="@+id/img13"
+                android:background="@drawable/p13"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+
+        </com.whu.bingo.bingoidea.view.StereoView2>
+
+
+        <com.whu.bingo.bingoidea.view.StereoView2
+            android:id="@+id/stereoView23"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+            <ImageView
+                android:id="@+id/img20"
+                android:background="@drawable/p20"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+            <ImageView
+                android:id="@+id/img21"
+                android:background="@drawable/p21"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+            <ImageView
+                android:id="@+id/img22"
+                android:background="@drawable/p22"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+            <ImageView
+                android:id="@+id/img23"
+                android:background="@drawable/p23"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+
+        </com.whu.bingo.bingoidea.view.StereoView2>
+
+        <com.whu.bingo.bingoidea.view.StereoView2
+            android:id="@+id/stereoView24"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+            <ImageView
+                android:id="@+id/img30"
+                android:background="@drawable/p30"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+            <ImageView
+                android:id="@+id/img31"
+                android:background="@drawable/p31"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+            <ImageView
+                android:id="@+id/img32"
+                android:background="@drawable/p32"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+            <ImageView
+                android:id="@+id/img33"
+                android:background="@drawable/p33"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+
+        </com.whu.bingo.bingoidea.view.StereoView2>
+
+
+    </com.whu.bingo.bingoidea.view.StereoView>
+
+
+</LinearLayout>
