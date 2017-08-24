@@ -2,7 +2,9 @@ package com.whu.bingo.bingoidea
 
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
+import com.umeng.message.PushAgent
 import com.whu.bingo.bingoidea.utils.ImageUtil
+import com.whu.bingo.bingoidea.utils.SharedPreferenceUtil
 import com.whu.bingo.bingoidea.view.StereoView
 import com.whu.bingo.bingoidea.view.StereoView2
 import kotlinx.android.synthetic.main.activity_main.*
@@ -29,6 +31,9 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+        PushAgent.getInstance(this).onAppStart()
+
+
         ImageUtil.loadurlimage(this,imgarray[0],img00)
         ImageUtil.loadurlimage(this,imgarray[1],img01)
         ImageUtil.loadurlimage(this,imgarray[2],img02)

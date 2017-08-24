@@ -32,15 +32,28 @@
                 android:background="@drawable/p00"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"/>
+
                 <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="top|right"
+                    android:layout_margin="8dp"
+                    android:background="@drawable/design_red_point"
+                    android:padding="6dp"
+                    android:text="6"
+                    android:textColor="@color/font_white"
+                    android:textSize="@dimen/txt_size_small" />
+
+                <TextView
+                    android:id="@+id/tv_T00"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:layout_marginLeft="10dp"
                     android:layout_marginRight="10dp"
+                    android:text="@string/T00"
                     android:textColor="@color/font_white"
-                    android:textSize="@dimen/txt_size_large"
-                    android:text="@string/T00"/>
+                    android:textSize="@dimen/txt_size_large" />
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -58,15 +71,29 @@
                 android:background="@drawable/p01"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"/>
+
                 <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="top|right"
+                    android:layout_margin="8dp"
+                    android:background="@drawable/design_red_point"
+                    android:padding="6dp"
+                    android:text="5"
+                    android:textColor="@color/font_white"
+                    android:textSize="@dimen/txt_size_small" />
+
+                <TextView
+                    android:id="@+id/tv_T01"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:layout_marginLeft="10dp"
                     android:layout_marginRight="10dp"
+                    android:text="@string/T01"
                     android:textColor="@color/font_white"
-                    android:textSize="@dimen/txt_size_large"
-                    android:text="@string/T01"/>
+                    android:textSize="@dimen/txt_size_large" />
+
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -84,15 +111,28 @@
                 android:layout_width="match_parent"
                 android:id="@+id/img02"
                 android:layout_height="match_parent"/>
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_marginLeft="10dp"
-                android:layout_marginRight="10dp"
-                android:textColor="@color/font_white"
-                android:textSize="@dimen/txt_size_large"
-                android:text="@string/T02"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="top|right"
+                    android:layout_margin="8dp"
+                    android:background="@drawable/design_red_point"
+                    android:padding="6dp"
+                    android:text="8"
+                    android:textColor="@color/font_white"
+                    android:textSize="@dimen/txt_size_small" />
+
+                <TextView
+                    android:id="@+id/tv_T02"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:text="@string/T02"
+                    android:textColor="@color/font_white"
+                    android:textSize="@dimen/txt_size_large" />
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -110,15 +150,28 @@
                 android:background="@drawable/p03"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"/>
+
                 <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="top|right"
+                    android:layout_margin="8dp"
+                    android:background="@drawable/design_red_point"
+                    android:padding="6dp"
+                    android:text="7"
+                    android:textColor="@color/font_white"
+                    android:textSize="@dimen/txt_size_small" />
+
+                <TextView
+                    android:id="@+id/tv_T03"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:layout_marginLeft="10dp"
                     android:layout_marginRight="10dp"
+                    android:text="@string/T03"
                     android:textColor="@color/font_white"
-                    android:textSize="@dimen/txt_size_large"
-                    android:text="@string/T03"/>
+                    android:textSize="@dimen/txt_size_large" />
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -145,15 +198,28 @@
                 android:background="@drawable/p10"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"/>
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_marginLeft="10dp"
-                android:layout_marginRight="10dp"
-                android:textColor="@color/font_white"
-                android:textSize="@dimen/txt_size_large"
-                android:text="@string/T10"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="top|right"
+                    android:layout_margin="8dp"
+                    android:background="@drawable/design_red_point"
+                    android:padding="6dp"
+                    android:text="4"
+                    android:textColor="@color/font_white"
+                    android:textSize="@dimen/txt_size_small" />
+
+                <TextView
+                    android:id="@+id/tv_T10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:text="@string/T10"
+                    android:textColor="@color/font_white"
+                    android:textSize="@dimen/txt_size_large" />
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -171,25 +237,28 @@
                 android:background="@drawable/p11"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"/>
+
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:background="@drawable/design_red_point"
-                    android:text="11"
+                    android:text="1"
                     android:textSize="@dimen/txt_size_small"
-                    android:layout_margin="9dp"
+                    android:layout_margin="8dp"
                     android:textColor="@color/font_white"
                     android:layout_gravity="top|right"
-                    android:padding="10dp"/>
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_marginLeft="10dp"
-                android:layout_marginRight="10dp"
-                android:textColor="@color/font_white"
-                android:textSize="@dimen/txt_size_large"
-                android:text="@string/T11"/>
+                    android:padding="6dp"/>
+
+                <TextView
+                    android:id="@+id/tv_T11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:text="@string/T11"
+                    android:textColor="@color/font_white"
+                    android:textSize="@dimen/txt_size_large" />
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -207,15 +276,28 @@
                 android:background="@drawable/p12"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"/>
+
                 <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="top|right"
+                    android:layout_margin="8dp"
+                    android:background="@drawable/design_red_point"
+                    android:padding="6dp"
+                    android:text="2"
+                    android:textColor="@color/font_white"
+                    android:textSize="@dimen/txt_size_small" />
+
+                <TextView
+                    android:id="@+id/tv_T12"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:layout_marginLeft="10dp"
                     android:layout_marginRight="10dp"
+                    android:text="@string/T12"
                     android:textColor="@color/font_white"
-                    android:textSize="@dimen/txt_size_large"
-                    android:text="@string/T12"/>
+                    android:textSize="@dimen/txt_size_large" />
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -233,15 +315,28 @@
                 android:background="@drawable/p13"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"/>
+
                 <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="top|right"
+                    android:layout_margin="8dp"
+                    android:background="@drawable/design_red_point"
+                    android:padding="6dp"
+                    android:text="3"
+                    android:textColor="@color/font_white"
+                    android:textSize="@dimen/txt_size_small" />
+
+                <TextView
+                    android:id="@+id/tv_T13"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:layout_marginLeft="10dp"
                     android:layout_marginRight="10dp"
+                    android:text="@string/T13"
                     android:textColor="@color/font_white"
-                    android:textSize="@dimen/txt_size_large"
-                    android:text="@string/T13"/>
+                    android:textSize="@dimen/txt_size_large" />
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -269,15 +364,28 @@
                 android:background="@drawable/p20"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"/>
+
                 <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="top|right"
+                    android:layout_margin="8dp"
+                    android:background="@drawable/design_red_point"
+                    android:padding="6dp"
+                    android:text="14"
+                    android:textColor="@color/font_white"
+                    android:textSize="@dimen/txt_size_small" />
+
+                <TextView
+                    android:id="@+id/tv_T20"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:layout_marginLeft="10dp"
                     android:layout_marginRight="10dp"
+                    android:text="@string/T20"
                     android:textColor="@color/font_white"
-                    android:textSize="@dimen/txt_size_large"
-                    android:text="@string/T20"/>
+                    android:textSize="@dimen/txt_size_large" />
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -295,15 +403,28 @@
                 android:background="@drawable/p21"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"/>
+
                 <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="top|right"
+                    android:layout_margin="8dp"
+                    android:background="@drawable/design_red_point"
+                    android:padding="6dp"
+                    android:text="13"
+                    android:textColor="@color/font_white"
+                    android:textSize="@dimen/txt_size_small" />
+
+                <TextView
+                    android:id="@+id/tv_T21"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:layout_marginLeft="10dp"
                     android:layout_marginRight="10dp"
+                    android:text="@string/T21"
                     android:textColor="@color/font_white"
-                    android:textSize="@dimen/txt_size_large"
-                    android:text="@string/T21"/>
+                    android:textSize="@dimen/txt_size_large" />
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -321,15 +442,28 @@
                 android:background="@drawable/p22"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"/>
+
                 <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="top|right"
+                    android:layout_margin="8dp"
+                    android:background="@drawable/design_red_point"
+                    android:padding="6dp"
+                    android:text="16"
+                    android:textColor="@color/font_white"
+                    android:textSize="@dimen/txt_size_small" />
+
+                <TextView
+                    android:id="@+id/tv_T22"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:layout_marginLeft="10dp"
                     android:layout_marginRight="10dp"
+                    android:text="@string/T22"
                     android:textColor="@color/font_white"
-                    android:textSize="@dimen/txt_size_large"
-                    android:text="@string/T22"/>
+                    android:textSize="@dimen/txt_size_large" />
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -348,15 +482,28 @@
                 android:background="@drawable/p23"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"/>
+
                 <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="top|right"
+                    android:layout_margin="8dp"
+                    android:background="@drawable/design_red_point"
+                    android:padding="6dp"
+                    android:text="15"
+                    android:textColor="@color/font_white"
+                    android:textSize="@dimen/txt_size_small" />
+
+                <TextView
+                    android:id="@+id/tv_T23"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:layout_marginLeft="10dp"
                     android:layout_marginRight="10dp"
+                    android:text="@string/T23"
                     android:textColor="@color/font_white"
-                    android:textSize="@dimen/txt_size_large"
-                    android:text="@string/T23"/>
+                    android:textSize="@dimen/txt_size_large" />
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -383,15 +530,28 @@
                 android:background="@drawable/p30"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"/>
+
                 <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="top|right"
+                    android:layout_margin="8dp"
+                    android:background="@drawable/design_red_point"
+                    android:padding="6dp"
+                    android:text="10"
+                    android:textColor="@color/font_white"
+                    android:textSize="@dimen/txt_size_small" />
+
+                <TextView
+                    android:id="@+id/tv_T30"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:layout_marginLeft="10dp"
                     android:layout_marginRight="10dp"
+                    android:text="@string/T30"
                     android:textColor="@color/font_white"
-                    android:textSize="@dimen/txt_size_large"
-                    android:text="@string/T30"/>
+                    android:textSize="@dimen/txt_size_large" />
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -411,15 +571,28 @@
                 android:background="@drawable/p31"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"/>
+
                 <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="top|right"
+                    android:layout_margin="8dp"
+                    android:background="@drawable/design_red_point"
+                    android:padding="6dp"
+                    android:text="9"
+                    android:textColor="@color/font_white"
+                    android:textSize="@dimen/txt_size_small" />
+
+                <TextView
+                    android:id="@+id/tv_T31"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:layout_marginLeft="10dp"
                     android:layout_marginRight="10dp"
+                    android:text="@string/T31"
                     android:textColor="@color/font_white"
-                    android:textSize="@dimen/txt_size_large"
-                    android:text="@string/T31"/>
+                    android:textSize="@dimen/txt_size_large" />
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -439,15 +612,28 @@
                 android:background="@drawable/p32"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"/>
+
                 <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="top|right"
+                    android:layout_margin="8dp"
+                    android:background="@drawable/design_red_point"
+                    android:padding="6dp"
+                    android:text="12"
+                    android:textColor="@color/font_white"
+                    android:textSize="@dimen/txt_size_small" />
+
+                <TextView
+                    android:id="@+id/tv_T32"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:layout_marginLeft="10dp"
                     android:layout_marginRight="10dp"
+                    android:text="@string/T32"
                     android:textColor="@color/font_white"
-                    android:textSize="@dimen/txt_size_large"
-                    android:text="@string/T32"/>
+                    android:textSize="@dimen/txt_size_large" />
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -467,15 +653,28 @@
                 android:background="@drawable/p33"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"/>
+
                 <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="top|right"
+                    android:layout_margin="8dp"
+                    android:background="@drawable/design_red_point"
+                    android:padding="6dp"
+                    android:text="11"
+                    android:textColor="@color/font_white"
+                    android:textSize="@dimen/txt_size_small" />
+
+                <TextView
+                    android:id="@+id/tv_T33"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:layout_marginLeft="10dp"
                     android:layout_marginRight="10dp"
+                    android:text="@string/T33"
                     android:textColor="@color/font_white"
-                    android:textSize="@dimen/txt_size_large"
-                    android:text="@string/T33"/>
+                    android:textSize="@dimen/txt_size_large" />
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -497,7 +696,7 @@
         android:textColor="@color/font_gray"
         android:layout_marginTop="50dp"
         android:textSize="@dimen/txt_size_large"
-        android:text="回到第一面"
+        android:text="未必能回到第一面的按钮"
         />
 
 
