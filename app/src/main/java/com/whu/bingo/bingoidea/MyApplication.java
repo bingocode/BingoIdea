@@ -86,6 +86,8 @@ public class MyApplication extends Application {
                                 .setSmallIcon(getSmallIconId(context, msg))
                                 .setTicker(msg.ticker)
                                 .setAutoCancel(true);
+                        String value0 = msg.extra.get("key0");
+                        Log.e("MYTAG","myvalue:"+value0);
                         return builder.getNotification();
                     default:
                         //默认为0，若填写的builder_id并不存在，也使用默认。
