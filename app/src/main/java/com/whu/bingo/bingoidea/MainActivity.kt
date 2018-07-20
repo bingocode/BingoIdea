@@ -3,8 +3,8 @@ package com.whu.bingo.bingoidea
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import com.whu.bingo.bingoidea.utils.ImageUtil
-import com.whu.bingo.bingoidea.view.StereoView
-import com.whu.bingo.bingoidea.view.StereoView2
+import com.whu.zengbin.mutiview.StereoView
+import com.whu.zengbin.mutiview.StereoView2
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {

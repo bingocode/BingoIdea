@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/BingoIdea.iml" filepath="$PROJECT_DIR$/BingoIdea.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mutiview/mutiview.iml" filepath="$PROJECT_DIR$/mutiview/mutiview.iml" />
     </modules>
   </component>
 </project>
