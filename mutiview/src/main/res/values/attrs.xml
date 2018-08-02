@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <declare-styleable name="StereoView2">
+    <declare-styleable name="HStereoView">
         <attr name="isstarttheme" format="boolean">false</attr>
     </declare-styleable>
 </resources>

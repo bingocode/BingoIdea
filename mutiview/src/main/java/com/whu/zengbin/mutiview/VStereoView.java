@@ -13,7 +13,7 @@ import android.view.ViewGroup;
 import android.view.animation.Interpolator;
 import android.widget.Scroller;
 
-public class StereoView extends ViewGroup {
+public class VStereoView extends ViewGroup {
 
     //可对外进行设置的参数
     private int mStartScreen = 1;//开始时的item位置（1表示xml里面的第二张）
@@ -42,15 +42,15 @@ public class StereoView extends ViewGroup {
 
     private State mState = State.Normal;
 
-    public StereoView(Context context) {
+    public VStereoView(Context context) {
         this(context, null);
     }
 
-    public StereoView(Context context, AttributeSet attrs) {
+    public VStereoView(Context context, AttributeSet attrs) {
         this(context, attrs, 0);
     }
 
-    public StereoView(Context context, AttributeSet attrs, int defStyleAttr) {
+    public VStereoView(Context context, AttributeSet attrs, int defStyleAttr) {
         super(context, attrs, defStyleAttr);
         this.mContext = context;
         init(mContext);
@@ -400,7 +400,7 @@ public class StereoView extends ViewGroup {
      * @param startScreen (0,getChildCount-1)
      * @return
      */
-    public StereoView setStartScreen(int startScreen) {
+    public VStereoView setStartScreen(int startScreen) {
         if (startScreen <= 0 || startScreen >= (getChildCount() - 1)) {
             throw new IndexOutOfBoundsException("请输入规定范围内startScreen位置号");
 
@@ -416,7 +416,7 @@ public class StereoView extends ViewGroup {
      * @param resistance (0,...)
      * @return
      */
-    public StereoView setResistance(float resistance) {
+    public VStereoView setResistance(float resistance) {
         this.resistance = resistance;
         return this;
     }
@@ -427,7 +427,7 @@ public class StereoView extends ViewGroup {
      * @param mInterpolator
      * @return
      */
-    public StereoView setInterpolator(Interpolator mInterpolator) {
+    public VStereoView setInterpolator(Interpolator mInterpolator) {
         mScroller = new Scroller(mContext, mInterpolator);
         return this;
     }
@@ -438,7 +438,7 @@ public class StereoView extends ViewGroup {
      * @param mAngle [0f,180f]
      * @return
      */
-    public StereoView setAngle(float mAngle) {
+    public VStereoView setAngle(float mAngle) {
         this.mAngle = 180f - mAngle;
         return this;
     }
@@ -449,7 +449,7 @@ public class StereoView extends ViewGroup {
      * @param can3D
      * @return
      */
-    public StereoView setCan3D(boolean can3D) {
+    public VStereoView setCan3D(boolean can3D) {
         isCan3D = can3D;
         return this;
     }
@@ -460,7 +460,7 @@ public class StereoView extends ViewGroup {
      * @param itemId [0,getChildCount-1]
      * @return
      */
-    public StereoView setItem(int itemId) {
+    public VStereoView setItem(int itemId) {
 
         LogUtil.m("之前curScreen " + mCurScreen);
         if (!mScroller.isFinished()) {
@@ -487,7 +487,7 @@ public class StereoView extends ViewGroup {
      *
      * @return
      */
-    public StereoView toPre() {
+    public VStereoView toPre() {
         if (!mScroller.isFinished()) {
             mScroller.abortAnimation();
             LogUtil.m("强制完成");
@@ -501,7 +501,7 @@ public class StereoView extends ViewGroup {
      *
      * @return
      */
-    public StereoView toNext() {
+    public VStereoView toNext() {
         if (!mScroller.isFinished()) {
             mScroller.abortAnimation();
             LogUtil.m("强制完成");

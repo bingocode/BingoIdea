@@ -35,11 +35,11 @@ dependencies {
 uploadArchives {
   repositories {
     mavenDeployer {
-      repository(url: "http://127.0.0.1:8080/repository/maven-releases/") {
-        authentication(userName: "admin", password: "admin123")
+      repository(url: "https://oss.sonatype.org/service/local/staging/deploy/maven2") {
+        authentication(userName: PROJ_ADMIN, password: PROJ_PASS)
       }
-      snapshotRepository(url: "http://127.0.0.1:8080/repository/maven-snapshots/") {
-        authentication(userName: "admin", password: "admin123")
+      snapshotRepository(url: "https://oss.sonatype.org/content/repositories/snapshots") {
+        authentication(userName: PROJ_ADMIN, password: PROJ_PASS)
       }
       pom.groupId = PROJ_GROUP
       pom.artifactId = PROJ_ARTIFACTID

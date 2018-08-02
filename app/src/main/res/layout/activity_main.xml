@@ -12,14 +12,14 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin">
-    <com.whu.zengbin.mutiview.StereoView
+    <com.whu.zengbin.mutiview.VStereoView
         android:layout_width="330dp"
         android:layout_height="250dp"
         android:id="@+id/stereoView"
         android:layout_marginTop="50dp"
         >
 
-        <com.whu.zengbin.mutiview.StereoView2
+        <com.whu.zengbin.mutiview.HStereoView
             android:id="@+id/stereoView21"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -181,10 +181,10 @@
                     android:textSize="@dimen/txt_size_medium"
                     android:layout_gravity="bottom|right"/>
             </FrameLayout>
-        </com.whu.zengbin.mutiview.StereoView2>
+        </com.whu.zengbin.mutiview.HStereoView>
 
 
-        <com.whu.zengbin.mutiview.StereoView2
+        <com.whu.zengbin.mutiview.HStereoView
             android:id="@+id/stereoView22"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -348,10 +348,10 @@
             </FrameLayout>
 
 
-        </com.whu.zengbin.mutiview.StereoView2>
+        </com.whu.zengbin.mutiview.HStereoView>
 
 
-        <com.whu.zengbin.mutiview.StereoView2
+        <com.whu.zengbin.mutiview.HStereoView
             android:id="@+id/stereoView23"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -515,9 +515,9 @@
             </FrameLayout>
 
 
-        </com.whu.zengbin.mutiview.StereoView2>
+        </com.whu.zengbin.mutiview.HStereoView>
 
-        <com.whu.zengbin.mutiview.StereoView2
+        <com.whu.zengbin.mutiview.HStereoView
             android:id="@+id/stereoView24"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -684,10 +684,10 @@
                     android:textSize="@dimen/txt_size_medium"
                     android:layout_gravity="bottom|right"/>
             </FrameLayout>
-        </com.whu.zengbin.mutiview.StereoView2>
+        </com.whu.zengbin.mutiview.HStereoView>
 
 
-    </com.whu.zengbin.mutiview.StereoView>
+    </com.whu.zengbin.mutiview.VStereoView>
 
     <TextView
         android:id="@+id/backorigion"

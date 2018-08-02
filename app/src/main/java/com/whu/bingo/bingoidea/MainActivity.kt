@@ -3,8 +3,8 @@ package com.whu.bingo.bingoidea
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import com.whu.bingo.bingoidea.utils.ImageUtil
-import com.whu.zengbin.mutiview.StereoView
-import com.whu.zengbin.mutiview.StereoView2
+import com.whu.zengbin.mutiview.VStereoView
+import com.whu.zengbin.mutiview.HStereoView
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
@@ -49,8 +49,8 @@ class MainActivity : AppCompatActivity() {
         ImageUtil.loadurlimage(this,imgarray[15],img33)
 
         backorigion.setOnClickListener {
-            stereoView.setItem(StereoView.mCurStartScreen)
-            stereoView22.setItem(StereoView2.curStartScreen)
+            stereoView.setItem(VStereoView.mCurStartScreen)
+            stereoView22.setItem(HStereoView.curStartScreen)
         }
     }
 }
