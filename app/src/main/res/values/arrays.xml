@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <string-array name="imgPaths">　　
+    <item>"http://outjw9m6x.bkt.clouddn.com/p00.jpg"</item>
+    <item>"http://outjw9m6x.bkt.clouddn.com/p01.jpg"</item>
+    <item>"http://outjw9m6x.bkt.clouddn.com/p02.jpg"</item>
+    <item>"http://outjw9m6x.bkt.clouddn.com/p031.jpg"</item>
+    <item>"http://outjw9m6x.bkt.clouddn.com/p10.jpg"</item>
+    <item>"http://outjw9m6x.bkt.clouddn.com/p11.jpg"</item>
+    <item>"http://outjw9m6x.bkt.clouddn.com/p121.jpg"</item>
+    <item>"http://outjw9m6x.bkt.clouddn.com/p13.jpg"</item>
+    <item>"http://outjw9m6x.bkt.clouddn.com/p20.jpg"</item>
+    <item>"http://outjw9m6x.bkt.clouddn.com/p21.jpg"</item>
+    <item>"http://outjw9m6x.bkt.clouddn.com/p221.jpg"</item>
+    <item>"http://outjw9m6x.bkt.clouddn.com/p231.jpg"</item>
+    <item>"http://outjw9m6x.bkt.clouddn.com/p30.jpg"</item>
+    <item>"http://outjw9m6x.bkt.clouddn.com/p311.jpg"</item>
+    <item>"http://outjw9m6x.bkt.clouddn.com/p321.jpg"</item>
+    <item>"http://outjw9m6x.bkt.clouddn.com/p331.jpg"</item>
+  </string-array>
+
+  <string-array name="indexs">　　
+    <item>1</item>
+    <item>2</item>
+    <item>3</item>
+    <item>4</item>
+    <item>5</item>
+    <item>6</item>
+    <item>7</item>
+    <item>8</item>
+    <item>9</item>
+    <item>10</item>
+    <item>11</item>
+    <item>12</item>
+    <item>13</item>
+    <item>14</item>
+    <item>15</item>
+    <item>16</item>
+  </string-array>
+
+  <string-array name="nexts">　　
+    <item>转到左面</item>
+    <item>转到左面</item>
+    <item>转到上面</item>
+    <item>转到左面</item>
+    <item>转到上面</item>
+    <item>转到右面</item>
+    <item>转到右面</item>
+    <item>转到右面</item>
+    <item>转到左面</item>
+    <item>转到左面</item>
+    <item>to be continued</item>
+    <item>转到左面</item>
+    <item>转到左面</item>
+    <item>转到左面</item>
+    <item>转到上面</item>
+    <item>转到左面</item>
+  </string-array>
+  　
+</resources>
