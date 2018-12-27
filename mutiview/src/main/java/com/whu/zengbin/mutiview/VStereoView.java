@@ -12,6 +12,7 @@ import android.view.ViewConfiguration;
 import android.view.ViewGroup;
 import android.view.animation.Interpolator;
 import android.widget.Scroller;
+import com.whu.zengbin.mutiview.util.LogUtil;
 
 public class VStereoView extends ViewGroup {
 

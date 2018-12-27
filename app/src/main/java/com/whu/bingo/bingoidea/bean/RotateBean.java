@@ -3,7 +3,7 @@ package com.whu.bingo.bingoidea.bean;
 /**
  * 创建时间: 2018/12/24 22:10 <br>
  * 作者: zengbin <br>
- * 描述:
+ * 描述: 3D旋转每个面的子项
  */
 public class RotateBean {
   public String imgPath;

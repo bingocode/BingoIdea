@@ -1,4 +1,4 @@
-package com.whu.zengbin.mutiview;
+package com.whu.zengbin.mutiview.util;
 
 import android.util.Log;
 

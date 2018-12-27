@@ -4,17 +4,17 @@
   android:layout_width="match_parent"
   android:layout_height="match_parent"
   android:orientation="vertical"
-  tools:context=".ui.MainActivity">
+  tools:context=".floatview.FloatActivity">
   <Button
-    android:id="@+id/rotate_btn"
+    android:id="@+id/show_float"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:text="3D旋转控件"/>
+    android:text="打开悬浮窗"/>
 
   <Button
-    android:id="@+id/float_btn"
+    android:id="@+id/hide_float"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:text="悬浮控件"/>
+    android:text="关闭悬浮窗"/>
 
 </LinearLayout>

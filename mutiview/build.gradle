@@ -35,16 +35,15 @@ dependencies {
 uploadArchives {
   repositories {
     mavenDeployer {
-      repository(url: "https://oss.sonatype.org/service/local/staging/deploy/maven2") {
+      snapshotRepository(url: "https://oss.sonatype.org/content/repositories/snapshots") {
         authentication(userName: PROJ_ADMIN, password: PROJ_PASS)
       }
-      snapshotRepository(url: "https://oss.sonatype.org/content/repositories/snapshots") {
+      repository(url: "https://oss.sonatype.org/service/local/staging/deploy/maven2") {
         authentication(userName: PROJ_ADMIN, password: PROJ_PASS)
       }
       pom.groupId = PROJ_GROUP
       pom.artifactId = PROJ_ARTIFACTID
       pom.version = PROJ_VERSION
-      pom.packaging = 'aar'
     }
   }
 }
