@@ -21,7 +21,7 @@
 ## 使用方式
 纵向翻转ViewGroup
 
-        <com.whu.zengbin.mutiview.VStereoView
+        <com.whu.zengbin.mutiview.stereo.VStereoView
             android:layout_width="330dp"
             android:layout_height="250dp"
             android:id="@+id/stereoView"
@@ -30,7 +30,7 @@
         </com.whu.zengbin.mutiview.VStereoView>
 横向翻转ViewGroup
 
-        <com.whu.zengbin.mutiview.HStereoView
+        <com.whu.zengbin.mutiview.stereo.HStereoView
             android:id="@+id/stereoView24"
             android:layout_width="match_parent"
             android:layout_height="match_parent">

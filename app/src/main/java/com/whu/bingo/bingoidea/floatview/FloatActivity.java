@@ -11,6 +11,8 @@ import android.provider.Settings;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import com.whu.bingo.bingoidea.R;
+import com.whu.bingo.bingoidea.utils.ToastUtil;
+import com.whu.zengbin.mutiview.IClickListener;
 import com.whu.zengbin.mutiview.floatview.FloatView;
 import com.whu.zengbin.mutiview.util.LogUtil;
 
@@ -19,6 +21,11 @@ public class FloatActivity extends AppCompatActivity implements View.OnClickList
   public static final int REQUEST_CODE = 10001;
   FloatView mFloat;
   FloatAdapter adapter;
+  private IClickListener clickListener = new IClickListener() {
+    @Override public void onItemClick() {
+      ToastUtil.showInfo(FloatActivity.this, "clickFloatWindow");
+    }
+  };
 
   public static void start(Context context) {
     Intent intent = new Intent(context, FloatActivity.class);
@@ -32,8 +39,8 @@ public class FloatActivity extends AppCompatActivity implements View.OnClickList
     findViewById(R.id.show_float).setOnClickListener(this);
     findViewById(R.id.hide_float).setOnClickListener(this);
 
-    mFloat = new FloatView(this);
-    adapter = new FloatAdapter(this);
+    mFloat = FloatView.getInstance();
+    adapter = new FloatAdapter();
     mFloat.setAdapter(adapter);
   }
 
@@ -59,10 +66,10 @@ public class FloatActivity extends AppCompatActivity implements View.OnClickList
               .create();
           dialog.show();
         } else {
-          mFloat.show();
+          mFloat.show(this, clickListener);
         }
       } else {
-        mFloat.show();
+        mFloat.show(this, clickListener);
       }
     } else if (i == R.id.hide_float) {
       mFloat.dismiss();
@@ -76,7 +83,7 @@ public class FloatActivity extends AppCompatActivity implements View.OnClickList
       if (Build.VERSION.SDK_INT >= 23) {
         if (Settings.canDrawOverlays(this)) {
           LogUtil.i(TAG, "onActivityResult SYSTEM_ALERT_WINDOW permisssion granted");
-          mFloat.show();
+          mFloat.show(this, clickListener);
         }
       }
     }

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:orientation="vertical"
+  tools:context=".video.PickVideoActivity">
+
+  <android.support.v7.widget.RecyclerView
+    android:id="@+id/rv_gallery"
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_weight="1"
+    android:background="@color/white"
+    android:clipToPadding="false"
+    android:padding="4dp" />
+
+  <TextView
+    android:id="@+id/tv_gallery_category"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:textSize="18dp"
+    android:textColor="@color/font_gray"
+    android:text="视频"
+    android:paddingTop="10dp"
+    android:paddingBottom="10dp"
+    android:paddingLeft="10dp"
+    android:layout_gravity="center_vertical"
+    />
+</LinearLayout>

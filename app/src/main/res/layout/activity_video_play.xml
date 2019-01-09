@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:background="@color/black"
+  tools:context=".video.VideoPlayActivity">
+
+  <com.whu.zengbin.mutiview.videoview.BinVideoView
+    android:id="@+id/bin_video_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_centerInParent="true" />
+
+  <ImageView
+    android:id="@+id/iv_back"
+    android:layout_width="48dp"
+    android:layout_height="48dp"
+    android:paddingBottom="15dp"
+    android:paddingLeft="15dp"
+    android:paddingRight="15dp"
+    android:paddingTop="24dp"
+    android:scaleType="center"
+    android:src="@mipmap/btn_back_normal" />
+
+
+  <ProgressBar
+    android:id="@+id/progress_circular"
+    android:layout_width="35dp"
+    android:layout_height="35dp"
+    android:layout_centerInParent="true"
+    android:visibility="gone"/>
+</RelativeLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <color name="chatui_chat_video_view_controller_background">#B30A0A0A</color>
+  <color name="white">#ffffffff</color>
+
+</resources>

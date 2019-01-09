@@ -8,6 +8,7 @@ import android.view.Gravity;
 import android.view.MotionEvent;
 import android.view.View;
 import android.view.WindowManager;
+import com.whu.zengbin.mutiview.IClickListener;
 import com.whu.zengbin.mutiview.util.LogUtil;
 
 /**
@@ -24,6 +25,7 @@ public class FloatView {
   public Boolean isShown = false;
   private WindowManager.LayoutParams params;
   private BaseFloatAdapter mAdapter;
+  private IClickListener mClickListener;
 
   int sPhoneWidth;
   int sPhoneHeight;
@@ -38,19 +40,28 @@ public class FloatView {
   private int finalX = 0;
   private int finalY = 0;
 
-  public FloatView(final Context context) {
-    mContext = context;
+  private static class SingletonHolder {
+    static FloatView sInstance = new FloatView();
+  }
+
+  public static FloatView getInstance() {
+    return SingletonHolder.sInstance;
+  }
+
+  private FloatView() {
   }
 
   public void setAdapter(BaseFloatAdapter adapter) {
     mAdapter = adapter;
   }
 
-  public void show() {
+  public void show(Context context, IClickListener listener) {
     if (isShown) {
       LogUtil.i(TAG, "return cause already shown");
       return;
     }
+    mClickListener = listener;
+    mContext = context;
     isShown = true;
     LogUtil.i(TAG, "showFloatView");
     mView = mAdapter.getView(mContext, mView);
@@ -127,9 +138,11 @@ public class FloatView {
   public void dismiss() {
     if (isShown && mView != null) {
       LogUtil.i(TAG, "hideFloatView");
+      isShown = false;
+      mContext = null;
+      mClickListener = null;
       mWindowManager.removeView(mView);
       mView = null;
-      isShown = false;
     }
   }
 
@@ -156,6 +169,9 @@ public class FloatView {
         finalX = params.x;
         finalY = params.y;
         if (isclick) {
+          if (mClickListener != null) {
+            mClickListener.onItemClick();
+          }
           LogUtil.i(TAG, "clickFloatWindow");
         }
       }

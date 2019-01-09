@@ -1,4 +1,4 @@
-package com.whu.zengbin.mutiview;
+package com.whu.zengbin.mutiview.stereo;
 
 import android.content.Context;
 import android.content.res.TypedArray;
@@ -13,6 +13,7 @@ import android.view.ViewConfiguration;
 import android.view.ViewGroup;
 import android.view.animation.Interpolator;
 import android.widget.Scroller;
+import com.whu.zengbin.mutiview.R;
 import com.whu.zengbin.mutiview.util.LogUtil;
 
 public class HStereoView extends ViewGroup {

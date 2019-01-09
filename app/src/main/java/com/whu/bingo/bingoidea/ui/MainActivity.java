@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.view.View;
 import com.whu.bingo.bingoidea.R;
 import com.whu.bingo.bingoidea.floatview.FloatActivity;
+import com.whu.bingo.bingoidea.video.PickVideoActivity;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
@@ -14,6 +15,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     setContentView(R.layout.activity_main);
     findViewById(R.id.rotate_btn).setOnClickListener(this);
     findViewById(R.id.float_btn).setOnClickListener(this);
+    findViewById(R.id.picVideo_btn).setOnClickListener(this);
   }
 
   @Override public void onClick(View v) {
@@ -22,6 +24,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
       startActivity(RotateActivity.startIntent(this));
     } else if (i == R.id.float_btn) {
       FloatActivity.start(this);
+    } else if (i == R.id.picVideo_btn) {
+      PickVideoActivity.start(this);
     }
   }
 }

@@ -1,10 +1,8 @@
 package com.whu.bingo.bingoidea.floatview;
 
-import android.content.Context;
 import android.view.View;
 import android.widget.ImageView;
 import com.whu.bingo.bingoidea.R;
-import com.whu.bingo.bingoidea.utils.ToastUtil;
 import com.whu.zengbin.mutiview.floatview.BaseFloatAdapter;
 
 /**
@@ -14,11 +12,6 @@ import com.whu.zengbin.mutiview.floatview.BaseFloatAdapter;
  */
 public class FloatAdapter extends BaseFloatAdapter<FloatAdapter.FloatViewHolder> {
 
-  private Context mContext;
-  public FloatAdapter(Context context) {
-    mContext = context;
-  }
-
   @Override protected FloatViewHolder onCreateViewHolder(View view) {
     return new FloatViewHolder(view);
   }
@@ -27,12 +20,12 @@ public class FloatAdapter extends BaseFloatAdapter<FloatAdapter.FloatViewHolder>
     return R.layout.item_float_layout;
   }
 
+  /**
+   *  在这里可以初始化视图数据，注意若设置了点击事件，
+   *  则会没有滑动效果，因此点击事件请通过FloatView.setClickListener设置
+   */
   @Override protected void onBindViewHolder() {
-    mViewHolder.imageView.setOnClickListener(new View.OnClickListener() {
-      @Override public void onClick(View v) {
-        ToastUtil.showInfo(mContext, "clickFloat");
-      }
-    });
+
   }
 
   static class FloatViewHolder extends BaseFloatAdapter.ViewHolder {

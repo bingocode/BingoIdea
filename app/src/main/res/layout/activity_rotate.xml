@@ -11,22 +11,22 @@
   android:paddingRight="@dimen/activity_horizontal_margin"
   android:paddingTop="@dimen/activity_vertical_margin">
 
-  <com.whu.zengbin.mutiview.VStereoView
+  <com.whu.zengbin.mutiview.stereo.VStereoView
     android:id="@+id/stereoView"
     android:layout_width="330dp"
     android:layout_height="250dp"
     android:layout_marginTop="50dp">
 
-    <com.whu.zengbin.mutiview.HStereoView
+    <com.whu.zengbin.mutiview.stereo.HStereoView
       android:id="@+id/stereoView21"
       android:layout_width="match_parent"
       android:layout_height="match_parent">
 
       <include layout="@layout/item_rotate_layout" />
-    </com.whu.zengbin.mutiview.HStereoView>
+    </com.whu.zengbin.mutiview.stereo.HStereoView>
 
 
-    <com.whu.zengbin.mutiview.HStereoView
+    <com.whu.zengbin.mutiview.stereo.HStereoView
       android:id="@+id/stereoView22"
       android:layout_width="match_parent"
       android:layout_height="match_parent"
@@ -34,28 +34,28 @@
 
       <include layout="@layout/item_rotate_layout" />
 
-    </com.whu.zengbin.mutiview.HStereoView>
+    </com.whu.zengbin.mutiview.stereo.HStereoView>
 
 
-    <com.whu.zengbin.mutiview.HStereoView
+    <com.whu.zengbin.mutiview.stereo.HStereoView
       android:id="@+id/stereoView23"
       android:layout_width="match_parent"
       android:layout_height="match_parent">
 
       <include layout="@layout/item_rotate_layout" />
 
-    </com.whu.zengbin.mutiview.HStereoView>
+    </com.whu.zengbin.mutiview.stereo.HStereoView>
 
-    <com.whu.zengbin.mutiview.HStereoView
+    <com.whu.zengbin.mutiview.stereo.HStereoView
       android:id="@+id/stereoView24"
       android:layout_width="match_parent"
       android:layout_height="match_parent">
 
       <include layout="@layout/item_rotate_layout" />
-    </com.whu.zengbin.mutiview.HStereoView>
+    </com.whu.zengbin.mutiview.stereo.HStereoView>
 
 
-  </com.whu.zengbin.mutiview.VStereoView>
+  </com.whu.zengbin.mutiview.stereo.VStereoView>
 
   <TextView
     android:id="@+id/backorigion"

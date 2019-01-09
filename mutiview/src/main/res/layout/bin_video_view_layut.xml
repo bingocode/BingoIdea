@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  >
+  <com.whu.zengbin.mutiview.videoview.BaseVideoView
+    android:id="@+id/video_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_centerInParent="true" />
+
+  <ImageView
+    android:id="@+id/iv_video_icon"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_centerInParent="true"
+    android:src="@drawable/bin_icon_video_large"
+    android:visibility="gone"
+    />
+
+  <LinearLayout
+    android:id="@+id/func_layout"
+    android:layout_width="match_parent"
+    android:layout_height="45dp"
+    android:layout_alignParentBottom="true"
+    android:background="@color/chatui_chat_video_view_controller_background"
+    android:gravity="center_vertical">
+    <ImageView
+      android:id="@+id/pause_img"
+      android:layout_width="wrap_content"
+      android:layout_height="match_parent"
+      android:paddingLeft="16dp"
+      android:paddingRight="16dp"
+      android:src="@drawable/bin_video_play_selector"/>
+    <TextView
+      android:id="@+id/time_start_tv"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:gravity="center"
+      android:textSize="13sp"
+      android:layout_marginRight="6dp"
+      android:textColor="@color/white"
+      android:text="00:00"
+      />
+
+    <SeekBar
+      android:id="@+id/seekbar"
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:layout_weight="1"
+      android:focusable="true"
+      android:minHeight="1dp"
+      android:maxHeight="2dp"
+      android:paddingTop="16dp"
+      android:paddingBottom="16dp"
+      android:paddingStart="0dp"
+      android:paddingEnd="10dp"
+      android:thumbOffset="10dp"
+      android:layout_gravity="center_vertical"
+      android:progressDrawable="@drawable/bin_video_view_seekbar_bg"
+      android:thumb="@drawable/bin_seekbar_thumb" />
+
+    <TextView
+      android:id="@+id/time_end_tv"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:textSize="13sp"
+      android:textColor="@color/white"
+      android:layout_marginLeft="10dp"
+      android:layout_marginRight="16dp"
+      />
+
+  </LinearLayout>
+</RelativeLayout>

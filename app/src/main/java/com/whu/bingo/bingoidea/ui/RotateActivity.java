@@ -10,8 +10,8 @@ import android.widget.TextView;
 import com.whu.bingo.bingoidea.R;
 import com.whu.bingo.bingoidea.bean.RotateBean;
 import com.whu.bingo.bingoidea.utils.ImageUtil;
-import com.whu.zengbin.mutiview.HStereoView;
-import com.whu.zengbin.mutiview.VStereoView;
+import com.whu.zengbin.mutiview.stereo.HStereoView;
+import com.whu.zengbin.mutiview.stereo.VStereoView;
 import java.util.ArrayList;
 import java.util.List;
 

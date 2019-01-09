@@ -1,4 +1,4 @@
-package com.whu.zengbin.mutiview;
+package com.whu.zengbin.mutiview.stereo;
 
 import android.content.Context;
 import android.graphics.Camera;
