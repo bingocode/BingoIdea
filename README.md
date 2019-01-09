@@ -19,21 +19,22 @@
     }
 ## 使用方式
 ### 3D立体旋转控件
-纵向翻转ViewGroup
-        <com.whu.zengbin.mutiview.stereo.VStereoView
-            android:layout_width="330dp"
-            android:layout_height="250dp"
-            android:id="@+id/stereoView"
-            android:layout_marginTop="50dp">
-        <!--添加组件-->
-        </com.whu.zengbin.mutiview.VStereoView>
-横向翻转ViewGroup
-        <com.whu.zengbin.mutiview.stereo.HStereoView
-            android:id="@+id/stereoView24"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
-        <!--添加组件-->
-        </com.whu.zengbin.mutiview.HStereoView>
+
+            纵向翻转ViewGroup
+                    <com.whu.zengbin.mutiview.stereo.VStereoView
+                        android:layout_width="330dp"
+                        android:layout_height="250dp"
+                        android:id="@+id/stereoView"
+                        android:layout_marginTop="50dp">
+                    <!--添加组件-->
+                    </com.whu.zengbin.mutiview.VStereoView>
+            横向翻转ViewGroup
+                    <com.whu.zengbin.mutiview.stereo.HStereoView
+                        android:id="@+id/stereoView24"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                    <!--添加组件-->
+                    </com.whu.zengbin.mutiview.HStereoView>
 ![Alt text](https://github.com/zengge6668/BingoIdea/raw/master/Screenshots/switch_horizon.png)
 
 ![Alt text](https://github.com/zengge6668/BingoIdea/raw/master/Screenshots/switch_vertical.png)
