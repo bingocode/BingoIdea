@@ -15,7 +15,7 @@
 在app的build.gradle配置
 
     dependencies {
-        compile 'com.github.bingocode:mutiview:1.0.1-SNAPSHOT'
+        compile 'com.github.bingocode:mutiview:1.0.4-SNAPSHOT'
     }
 ## 使用方式
 ### 3D立体旋转控件
