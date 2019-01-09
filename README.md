@@ -52,7 +52,7 @@
     由于是采用应用外显示悬浮窗方式，需要进行android.permission.SYSTEM_ALERT_WINDOW权限，可参考Demo
     // 创建实例
     FloatView mFloat = FloatView.getInstance();
-    // 设置悬浮窗布局，adapter必须继承BaseFloatAdapter ,可以自定义悬浮窗布
+    // 设置悬浮窗布局，adapter必须继承BaseFloatAdapter ,可以自定义布局
     mFloat.setAdapter(adapter); 局
     // 显示悬浮窗，传入点击监听器
     mFloat.show(this, clickListener);
