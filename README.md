@@ -37,8 +37,6 @@
     </com.whu.zengbin.mutiview.HStereoView>
 ![Alt text](https://github.com/zengge6668/BingoIdea/raw/master/Screenshots/switch_horizon.png)
 
-![Alt text](https://github.com/zengge6668/BingoIdea/raw/master/Screenshots/switch_vertical.png)
-
 ## 版本说明
 由于配置的maven有些问题，只能拉下最新的版本
 ### 1.0.4-SNAPSHOT
