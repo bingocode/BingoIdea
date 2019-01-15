@@ -93,6 +93,9 @@ public class FloatView {
 
     mView.setOnTouchListener(new View.OnTouchListener() {
       @Override public boolean onTouch(View v, MotionEvent event) {
+        if (mView == null) {
+          return true;
+        }
         switch (event.getAction()) {
           case MotionEvent.ACTION_DOWN:// 按下 事件
             startX = lastX = (int) event.getRawX();
