@@ -31,9 +31,9 @@ dependencies {
     exclude group: 'com.android.support', module: 'support-annotations'
   })
   // 采取本地依赖 （用于测试本地修改，不用上传到远程maven）
- // compile project(':mutiview')
+  compile project(':mutiview')
   // 采取远程依赖（用来测试是否已经发布到远程maven，虽然是snapshot但似乎无法覆盖上传）
-  compile 'com.github.bingocode:mutiview:1.0.4-SNAPSHOT'
+  //compile 'com.github.bingocode:mutiview:1.0.4-SNAPSHOT'
   compile "org.jetbrains.kotlin:kotlin-stdlib-jre7:$kotlin_version"
   compile 'com.android.support:appcompat-v7:25.3.0'
   compile 'com.android.support:support-v4:25.3.0'

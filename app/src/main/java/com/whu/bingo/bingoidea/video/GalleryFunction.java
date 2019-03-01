@@ -22,7 +22,7 @@ public class GalleryFunction implements
     Collections.sort(allItems, new Comparator<FileBean>() {
       @Override
       public int compare(FileBean o1, FileBean o2) {
-        return (int) (o2.getDate() - o1.getDate());
+        return Long.signum (o2.getDate() - o1.getDate());
       }
     });
     return allItems;
