@@ -82,7 +82,11 @@
       super.onDestroy();
     }
 
+### 引导弹窗蒙版
 
+![Alt text](https://github.com/bingocode/BingoIdea/blob/master/Screenshots/20190912052754.png)
 
+### 可折叠文本
 
+![Alt text](https://github.com/bingocode/BingoIdea/blob/master/Screenshots/20190912052822.png)
 
