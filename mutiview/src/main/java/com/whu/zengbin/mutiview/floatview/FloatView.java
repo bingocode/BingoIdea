@@ -4,6 +4,7 @@ import android.animation.Animator;
 import android.animation.ValueAnimator;
 import android.content.Context;
 import android.graphics.PixelFormat;
+import android.os.Build;
 import android.view.Gravity;
 import android.view.MotionEvent;
 import android.view.View;
@@ -73,8 +74,11 @@ public class FloatView {
     sPhoneHeight = mWindowManager.getDefaultDisplay().getHeight();
 
     params = new WindowManager.LayoutParams();
-    // 类型
-    params.type = WindowManager.LayoutParams.TYPE_SYSTEM_ALERT;
+    if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
+      params.type = WindowManager.LayoutParams.TYPE_APPLICATION_OVERLAY;
+    } else {
+      params.type = WindowManager.LayoutParams.TYPE_SYSTEM_ALERT;
+    }
     // 设置flag
     params.flags = WindowManager.LayoutParams.FLAG_NOT_FOCUSABLE
         | WindowManager.LayoutParams.FLAG_NOT_TOUCH_MODAL;
