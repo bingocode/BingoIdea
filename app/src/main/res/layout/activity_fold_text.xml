@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:orientation="vertical"
+  tools:context=".ui.FoldTextActivity">
+
+  <EditText
+    android:id="@+id/edt_content"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" />
+
+  <Button
+    android:id="@+id/submit_btn"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="显示" />
+
+  <com.whu.zengbin.mutiview.foldtextview.ExpandTextView
+    android:id="@+id/expand_tv"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="我是可折叠文本"
+    android:textSize="20dp"
+    app:max_line="3" />
+
+  <TextView
+    android:id="@+id/expand_tip"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:padding="10dp"
+    android:text="展开"
+    android:textColor="@color/colorAccent"
+    android:textSize="20dp"
+    android:visibility="gone"
+    tools:visibility="visible"/>
+</LinearLayout>

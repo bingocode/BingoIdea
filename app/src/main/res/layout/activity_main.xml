@@ -29,4 +29,10 @@
     android:layout_height="wrap_content"
     android:text="功能引导蒙层"/>
 
+  <Button
+    android:id="@+id/expand_textView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="可展开折叠的文本"/>
+
 </LinearLayout>

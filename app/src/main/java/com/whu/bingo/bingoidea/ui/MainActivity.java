@@ -22,6 +22,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     findViewById(R.id.picVideo_btn).setOnClickListener(this);
     mGuideButton = findViewById(R.id.guideview_btn);
     mGuideButton.setOnClickListener(this);
+    findViewById(R.id.expand_textView).setOnClickListener(this);
   }
 
   @Override public void onClick(View v) {
@@ -38,6 +39,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
           .highLight(mGuideButton)
           .build();
       guide.show();
+    } else if (i == R.id.expand_textView) {
+      FoldTextActivity.start(this);
     }
   }
 }

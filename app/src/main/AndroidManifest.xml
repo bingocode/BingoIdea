@@ -12,6 +12,7 @@
     android:roundIcon="@mipmap/ic_launcher_round"
     android:supportsRtl="true"
     android:theme="@style/AppTheme">
+    <activity android:name=".ui.FoldTextActivity"></activity>
     <activity android:name=".ui.MainActivity">
       <intent-filter>
         <action android:name="android.intent.action.MAIN" />
@@ -21,9 +22,10 @@
     </activity>
     <activity android:name=".ui.RotateActivity" />
     <activity android:name=".floatview.FloatActivity" />
-    <activity android:name=".video.VideoPlayActivity"
-      android:theme="@style/AppNoTitleTheme"
-      android:configChanges="orientation|keyboardHidden|screenSize"/>
+    <activity
+      android:name=".video.VideoPlayActivity"
+      android:configChanges="orientation|keyboardHidden|screenSize"
+      android:theme="@style/AppNoTitleTheme" />
     <activity android:name=".video.PickVideoActivity" />
   </application>
 

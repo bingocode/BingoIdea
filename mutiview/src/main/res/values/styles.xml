@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <declare-styleable name="ExpandTextView">
+    <!-- 最大行数 -->
+    <attr format="integer" name="max_line" />
+  </declare-styleable>
+</resources>
