@@ -35,4 +35,23 @@
     android:layout_height="wrap_content"
     android:text="可展开折叠的文本"/>
 
+  <RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <Button
+      android:id="@+id/num_editText"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:text="显示数字的输入框"/>
+
+    <View
+      android:id="@+id/num_edit_red_point"
+      android:layout_width="10dp"
+      android:layout_height="10dp"
+      android:background="@drawable/design_red_point"
+      android:layout_alignTop="@id/num_editText"
+      android:layout_alignRight="@id/num_editText"/>
+
+  </RelativeLayout>
+
 </LinearLayout>
