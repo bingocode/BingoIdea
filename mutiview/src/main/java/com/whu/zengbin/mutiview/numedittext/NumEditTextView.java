@@ -122,8 +122,8 @@ public class NumEditTextView extends LinearLayout implements TextWatcher {
       return;
     }
     mPhraseEdit.setText(phrase);
-    mPhraseEdit.setSelection(phrase.length());
-    setNum(phrase.length());
+    mPhraseEdit.setSelection(mPhraseEdit.getText().length());
+    setNum(mPhraseEdit.getText().length());
   }
 
   public void setMaxLength(int length) {
